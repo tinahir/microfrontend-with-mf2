@@ -1,36 +1,17 @@
 {
   "name": "microfrontend-with-mf2",
-  "version": "0.1.1",
-  "type": "module",
+  "description": "Demo of fetching a React component in a Vue app via Module Federation, showcasing two-way communication and lifecycle management.",
   "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "dev": "rsbuild dev",
-    "build": "rsbuild build",
-    "preview": "rsbuild preview"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.10.0",
-    "@reduxjs/toolkit": "^1.8.3",
-    "framer-motion": "^7.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-redux": "^8.0.2",
-    "react-router-dom": "^6.9.0",
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1",
-    "video.js": "^8.3.0",
-    "videojs-youtube": "^3.0.1",
-    "vite-tsconfig-paths": "^3.5.2"
+    "preinstall": "pnpm install --ignore-scripts",
+    "start": "pnpm run --filter microfrontend-with-mf2_** --parallel dev",
+    "build": "pnpm run --filter microfrontend-with-mf2_* build",
+    "serve": "pnpm run --filter microfrontend-with-mf2_* --parallel serve",
+    "clean": "pnpm run --filter microfrontend-with-mf2_* --parallel clean"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.0.0-alpha.4",
-    "@rsbuild/plugin-react": "^1.0.0-alpha.4",
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "@types/react-slick": "^0.23.10",
-    "typescript": "^4.6.4"
+    "@babel/preset-react": "7.24.7",
+    "wait-on": "7.2.0"
   }
 }
