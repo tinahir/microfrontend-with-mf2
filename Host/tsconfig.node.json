@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "paths":{
+      "*": ["./@mf-types/*"]
+    }
+  },
+  "include": ["rsbuild.config.ts"]
+}

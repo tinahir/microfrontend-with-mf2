@@ -1,0 +1,4 @@
+
+await import('./bootstrap');
+
+export {}

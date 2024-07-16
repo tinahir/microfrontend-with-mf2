@@ -1,0 +1,35 @@
+{
+  "name": "remotes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
+    "preview": "rsbuild preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "@module-federation/bridge-react": "^0.2.5",
+    "@module-federation/enhanced": "^0.1.2",
+    "@mui/base": "5.0.0-alpha.104",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.0",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "video.js": "^8.3.0",
+    "videojs-youtube": "^3.0.1",
+    "@mui/system": "5.10.12"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.0.0-alpha.4",
+    "@rsbuild/plugin-react": "^1.0.0-alpha.4",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.5.2"
+  }
+}
