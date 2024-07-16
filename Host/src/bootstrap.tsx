@@ -12,20 +12,20 @@ import { extendedApi } from "./store/slices/configuration";
 import palette from "./theme/palette";
 import router from "./routes";
 import MainLoadingScreen from "./components/MainLoadingScreen";
-import { init } from "@module-federation/enhanced/runtime";
+// import { init } from "@module-federation/enhanced/runtime";
 
 store.dispatch(extendedApi.endpoints.getConfiguration.initiate(undefined));
 
-init({
-  name: "runtime_host",
-  remotes: [
-    {
-      name: "runtime_remote",
-      alias: "remote2",
-      entry: "http://localhost:3001/mf-manifest.json"
-    }
-  ]
-});
+// init({
+//   name: "runtime_host",
+//   remotes: [
+//     {
+//       name: "runtime_remote",
+//       alias: "remote2",
+//       entry: "http://localhost:3001/mf-manifest.json"
+//     }
+//   ]
+// });
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

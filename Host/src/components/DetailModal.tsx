@@ -27,13 +27,13 @@ import { useDetailModal } from "../providers/DetailModalProvider";
 import { useGetSimilarVideosQuery } from "../store/slices/discover";
 import { MEDIA_TYPE } from "../types/Common";
 import { loadRemote } from "@module-federation/runtime";
-// import VideoJSPlayer from "./watch/VideoJSPlayer";
+import VideoJSPlayer from "./watch/VideoJSPlayer";
 
 
-const VideoJSPlayer = React.lazy(async () => {
-  const element = await loadRemote('remote2/videoPlayer');
-  return element;
-});
+// const VideoJSPlayer = React.lazy(async () => {
+//   const element = await loadRemote('remote2/videoPlayer');
+//   return element;
+// });
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & {
@@ -92,7 +92,7 @@ export default function DetailModal() {
                 height: "calc(9 / 16 * 100%)",
               }}
             >
-              <React.Suspense fallback="Loading player">
+              {/* <React.Suspense fallback="Loading player"> */}
                 <VideoJSPlayer
                   options={{
                     loop: true,
@@ -113,7 +113,7 @@ export default function DetailModal() {
                   }}
                   onReady={handleReady}
                   />
-                </React.Suspense>
+                {/* </React.Suspense> */}
 
               <Box
                 sx={{
