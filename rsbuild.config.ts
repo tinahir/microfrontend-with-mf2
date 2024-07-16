@@ -3,12 +3,7 @@ import { pluginReact } from "@rsbuild/plugin-react";
 
 export default defineConfig({
   html: {
-    template: './index.html',
-  },
-  source: {
-    entry: {
-      index: './src/main.tsx',
-    },
+    template: "./index.html",
   },
   plugins: [pluginReact()],
 });
