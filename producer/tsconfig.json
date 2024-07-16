@@ -10,11 +10,7 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
-    "useDefineForClassFields": true,
-    "paths": {
-      "src/*": ["./src/*"],
-      "*": ["./@mf-types/*"]
-    }
+    "useDefineForClassFields": true
   },
-  "include": ["src", "./@mf-types"]
+  "include": ["src"]
 }

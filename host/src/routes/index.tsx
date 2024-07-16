@@ -3,6 +3,7 @@ import { MAIN_PATH } from "src/constant";
 
 import MainLayout from "src/layouts/MainLayout";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
